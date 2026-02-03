@@ -1,0 +1,216 @@
+
+> prepwise@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.2.2 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://172.20.10.3:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 766ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1912ms
+ GET / 307 in 2484ms
+ ○ Compiling /sign-in ...
+ ✓ Compiled /sign-in in 741ms
+ GET /sign-in 200 in 905ms
+ ✓ Compiled /favicon.ico in 276ms
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 284ms
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 317ms
+ ○ Compiling /sign-up ...
+ ✓ Compiled /sign-up in 579ms
+ GET /sign-up 200 in 603ms
+ POST /sign-up 200 in 957ms
+ GET /sign-in 200 in 26ms
+ GET /sign-in 200 in 24ms
+ POST /sign-in 200 in 2535ms
+ GET / 200 in 1833ms
+ GET / 200 in 1929ms
+ ✓ Compiled /_not-found/page in 238ms
+ GET /covers/morganstanley.png 404 in 273ms
+ ⨯ The requested resource isn't a valid image for /covers/morganstanley.png received text/html; charset=utf-8
+ ○ Compiling /interview ...
+ ✓ Compiled /interview in 694ms
+ GET /interview 200 in 1383ms
+ GET / 200 in 895ms
+ GET /covers/bain.png 404 in 42ms
+ ⨯ The requested resource isn't a valid image for /covers/bain.png received text/html; charset=utf-8
+ GET /interview 200 in 1224ms
+ GET /interview 200 in 1010ms
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 28ms
+ GET / 200 in 998ms
+ GET / 200 in 825ms
+ GET /covers/google.png 404 in 37ms
+ ⨯ The requested resource isn't a valid image for /covers/google.png received text/html; charset=utf-8
+ GET / 200 in 954ms
+ GET /covers/accenture.png 404 in 35ms
+ ⨯ The requested resource isn't a valid image for /covers/accenture.png received text/html; charset=utf-8
+ GET / 200 in 854ms
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 21ms
+ GET /sign-in 307 in 863ms
+ GET / 200 in 865ms
+ GET /covers/morganstanley.png 404 in 45ms
+ ⨯ The requested resource isn't a valid image for /covers/morganstanley.png received text/html; charset=utf-8
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 27ms
+ GET / 200 in 1089ms
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 24ms
+ GET / 200 in 1259ms
+ GET /covers/mckinsey.png 404 in 42ms
+ ⨯ The requested resource isn't a valid image for /covers/mckinsey.png received text/html; charset=utf-8
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 23ms
+ GET /interview 200 in 747ms
+ GET / 200 in 1019ms
+ GET /covers/goldman.png 404 in 37ms
+ ⨯ The requested resource isn't a valid image for /covers/goldman.png received text/html; charset=utf-8
+ GET / 200 in 1886ms
+ GET /covers/citadel.png 404 in 52ms
+ ⨯ The requested resource isn't a valid image for /covers/citadel.png received text/html; charset=utf-8
+ ○ Compiling /interview/[id] ...
+ ✓ Compiled /interview/[id] in 638ms
+ GET /interview/test-interview-1763897778392 200 in 3190ms
+ GET /covers/bain.png 404 in 46ms
+ ⨯ The requested resource isn't a valid image for /covers/bain.png received text/html; charset=utf-8
+ GET /covers/citadel.png 404 in 37ms
+ ⨯ The requested resource isn't a valid image for /covers/citadel.png received text/html; charset=utf-8
+ GET / 200 in 672ms
+ GET /covers/accenture.png 404 in 54ms
+ ⨯ The requested resource isn't a valid image for /covers/accenture.png received text/html; charset=utf-8
+ ✓ Compiled / in 18ms
+ GET / 200 in 1100ms
+ GET / 200 in 888ms
+ GET / 200 in 861ms
+ GET / 200 in 972ms
+ ✓ Compiled /_not-found/page in 14ms
+ GET /covers/deloitte.png 404 in 44ms
+ ⨯ The requested resource isn't a valid image for /covers/deloitte.png received text/html; charset=utf-8
+ GET / 200 in 1032ms
+ GET / 200 in 962ms
+ GET / 200 in 1225ms
+ GET /covers/deloitte.png 404 in 42ms
+ ⨯ The requested resource isn't a valid image for /covers/deloitte.png received text/html; charset=utf-8
+ GET / 200 in 665ms
+ GET /covers/morganstanley.png 404 in 41ms
+ ⨯ The requested resource isn't a valid image for /covers/morganstanley.png received text/html; charset=utf-8
+ GET / 200 in 665ms
+ GET /covers/citadel.png 404 in 38ms
+ ⨯ The requested resource isn't a valid image for /covers/citadel.png received text/html; charset=utf-8
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 21ms
+ ✓ Compiled /interview in 13ms
+ GET /interview 200 in 813ms
+ GET / 200 in 798ms
+ GET /covers/accenture.png 404 in 44ms
+ ⨯ The requested resource isn't a valid image for /covers/accenture.png received text/html; charset=utf-8
+ ✓ Compiled /interview/[id] in 8ms
+ GET /interview/test-interview-1763897778392 200 in 900ms
+ GET /covers/citadel.png 404 in 75ms
+ ⨯ The requested resource isn't a valid image for /covers/citadel.png received text/html; charset=utf-8
+Error saving feedback: Error [AI_APICallError]: API Key not found. Please pass a valid API key.
+    at async createFeedback (lib/actions/general.action.ts:20:23)
+  18 |       .join("");
+  19 |
+> 20 |     const { object } = await generateObject({
+     |                       ^
+  21 |       model: google("gemini-2.0-flash-001", {
+  22 |         structuredOutputs: false,
+  23 |       }), {
+  cause: undefined,
+  url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent',
+  requestBodyValues: [Object],
+  statusCode: 400,
+  responseHeaders: [Object],
+  responseBody: '{\n' +
+    '  "error": {\n' +
+    '    "code": 400,\n' +
+    '    "message": "API Key not found. Please pass a valid API key.",\n' +
+    '    "status": "INVALID_ARGUMENT",\n' +
+    '    "details": [\n' +
+    '      {\n' +
+    '        "@type": "type.googleapis.com/google.rpc.ErrorInfo",\n' +
+    '        "reason": "API_KEY_INVALID",\n' +
+    '        "domain": "googleapis.com",\n' +
+    '        "metadata": {\n' +
+    '          "service": "generativelanguage.googleapis.com"\n' +
+    '        }\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",\n' +
+    '        "locale": "en-US",\n' +
+    '        "message": "API Key not found. Please pass a valid API key."\n' +
+    '      }\n' +
+    '    ]\n' +
+    '  }\n' +
+    '}\n',
+  isRetryable: false,
+  data: [Object]
+}
+ POST /interview/test-interview-1763897778392 200 in 674ms
+ GET / 200 in 722ms
+ GET / 200 in 752ms
+ GET /covers/deloitte.png 404 in 44ms
+ ⨯ The requested resource isn't a valid image for /covers/deloitte.png received text/html; charset=utf-8
+ ✓ Compiled in 43ms
+ GET / 200 in 659ms
+ GET /covers/jpmorgan.png 404 in 42ms
+ ⨯ The requested resource isn't a valid image for /covers/jpmorgan.png received text/html; charset=utf-8
+ GET /interview 200 in 592ms
+ GET / 200 in 669ms
+ GET /covers/goldman.png 404 in 42ms
+ ⨯ The requested resource isn't a valid image for /covers/goldman.png received text/html; charset=utf-8
+ GET /interview 200 in 534ms
+ GET / 200 in 638ms
+ GET /covers/mckinsey.png 404 in 38ms
+ ⨯ The requested resource isn't a valid image for /covers/mckinsey.png received text/html; charset=utf-8
+ GET /interview 200 in 770ms
+ GET / 200 in 800ms
+ GET /covers/accenture.png 404 in 50ms
+ ⨯ The requested resource isn't a valid image for /covers/accenture.png received text/html; charset=utf-8
+ GET /interview 200 in 485ms
+ GET / 200 in 593ms
+ GET /covers/jpmorgan.png 404 in 35ms
+ ⨯ The requested resource isn't a valid image for /covers/jpmorgan.png received text/html; charset=utf-8
+ GET / 200 in 628ms
+ GET /covers/blackrock.png 404 in 47ms
+ ⨯ The requested resource isn't a valid image for /covers/blackrock.png received text/html; charset=utf-8
+ GET /interview 200 in 382ms
+ GET / 200 in 766ms
+ GET /covers/citadel.png 404 in 39ms
+ ⨯ The requested resource isn't a valid image for /covers/citadel.png received text/html; charset=utf-8
+ GET /interview/test-interview-1763897778392 200 in 618ms
+ GET /covers/jpmorgan.png 404 in 39ms
+ ⨯ The requested resource isn't a valid image for /covers/jpmorgan.png received text/html; charset=utf-8
+ GET /interview 200 in 508ms
+ ✓ Compiled in 38ms
+   Reload env: .env.local
+ ✓ Compiled / in 14ms
+ GET / 200 in 1332ms
+ GET /interview 200 in 916ms
+ GET / 200 in 609ms
+ ✓ Compiled in 164ms
+ ✓ Compiled in 94ms
+ ✓ Compiled in 427ms
+ GET / 200 in 1246ms
+ GET /covers/accenture.png 404 in 116ms
+ ⨯ The requested resource isn't a valid image for /covers/accenture.png received text/html; charset=utf-8
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 234ms
+ ✓ Compiled in 119ms
+ ✓ Compiled / in 54ms
+ GET / 200 in 1134ms
+ GET / 200 in 548ms
+ GET / 200 in 770ms
+ GET /covers/google.png 404 in 44ms
+ ⨯ The requested resource isn't a valid image for /covers/google.png received text/html; charset=utf-8
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 45ms
+ ✓ Compiled / in 30ms
+ GET / 200 in 848ms
+ GET / 200 in 1224ms
+ GET / 200 in 798ms
+ GET /favicon.ico?favicon.eb09710d.ico 200 in 24ms
+ GET /covers/bcg.png 404 in 48ms
+ ⨯ The requested resource isn't a valid image for /covers/bcg.png received text/html; charset=utf-8
+ ✓ Compiled / in 23ms
+ GET / 200 in 820ms
+ GET / 200 in 656ms
+ GET / 200 in 624ms
+ GET /covers/bain.png 404 in 39ms
+ ⨯ The requested resource isn't a valid image for /covers/bain.png received text/html; charset=utf-8
